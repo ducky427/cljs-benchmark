@@ -1,36 +1,25 @@
-# bench
+# cljs-benchmark
 
-FIXME: Write a one-line description of your library/project.
+This repository shows how to benchmark Clojurescript code in a browser.
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+Edit lines [L26-L31](https://github.com/ducky427/cljs-benchmark/blob/master/src/bench/core.cljs#L26-L31) of `core.cljs` to add functions you want to benchmark.
 
-## Setup
+For benchmarking, its recommended to use a production build of the Clojurescript code. To create a production build:
 
-To get an interactive development environment run:
+```bash
+lein build
+```
 
-    lein figwheel
+Then go to folder `resources/public` and serve by that directory using a static webserver. An example of that using Python is:
 
-and open your browser at [localhost:3449](http://localhost:3449/).
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
+```bash
+python -m SimpleHTTPServer
+```
 
-    (js/alert "Am I connected?")
+Now open `http://localhost:8000` in a browser of your choice and press the 'Run Benchmark' button to begin benchmarking.
 
-and you should see an alert in the browser window.
-
-To clean all compiled files:
-
-    lein clean
-
-To create a production build run:
-
-    lein do clean, cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
 
 ## License
 
