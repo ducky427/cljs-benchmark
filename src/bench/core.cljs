@@ -85,9 +85,7 @@
           [create-row "Deviation" "deviation" (:results data) fastest]
           [create-row "Margin of error" "moe" (:results data) fastest]
           [create-row "Relative moe" "rme" (:results data) fastest]
-          [create-row "Standard moe" "sem" (:results data) fastest]]]]
-
-       )]))
+          [create-row "Standard moe" "sem" (:results data) fastest]]]])]))
 
 (defn mount-root
   []
