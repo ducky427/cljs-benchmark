@@ -40,4 +40,5 @@
                            :optimizations :advanced
                            :pretty-print false}}]}
 
-  :figwheel {:css-dirs ["resources/public/css"]})
+  :figwheel {:css-dirs ["resources/public/css"]}
+  :aliases {"build" ["do" "clean" ["cljsbuild" "once" "min"]]})
