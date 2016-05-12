@@ -11,8 +11,9 @@
                  [cljsjs/benchmark "2.1.0-1"]
                  [reagent "0.6.0-alpha2"]]
 
-  :plugins [[lein-figwheel "0.5.2"]
-            [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]]
+  :plugins [[lein-figwheel "0.5.3-1"]
+            [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]
+            [lein-ancient "0.6.10"]]
 
   :source-paths ["src"]
 
